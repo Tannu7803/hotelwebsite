@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Price Comparison</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    img{ 
+      width: 300px;
+      height: 500px;
+    }
+    div{
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow p-4">
+    <h1 class="text-2xl font-bold text-center">Compare Hotel Prices</h1>
+  </header>
+
+  <main class="p-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Booking.com -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <img src="https://assets-global.website-files.com/62685058d179ab5ae11b4e6a/62730ffcbaae791e13a144ae_608737766124d06222cb7f28_Booking.jpeg" alt="Booking.com" class="h-10 mb-3">
+      <h2 class="font-semibold text-lg">Booking.com</h2>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li>1 Day: ₹3,000</li>
+        <li>2 Days 3 Nights: ₹8,000</li>
+        <li>Weekend Special: ₹5,500</li>
+      </ul>
+    </div>
+
+    <!-- Agoda -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <img src="https://gadgetsmagazine.com.ph/wp-content/uploads/2020/01/agoda-pfd.jpg" alt="Agoda" class="h-10 mb-3" />
+      <h2 class="font-semibold text-lg">Agoda</h2>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li>1 Day: ₹2,800</li>
+        <li>2 Days 3 Nights: ₹7,500</li>
+        <li>Weekend Special: ₹5,000</li>
+      </ul>
+    </div>
+
+    <!-- MakeMyTrip -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <img src="https://lh3.googleusercontent.com/fs4b_PJqDHXdUyLeP61GiK4jAkFNyz3ffpzIBpvXCV4B4DkcPKLniYNvQxOmKzHKVKk=w2247-h1264" alt="MakeMyTrip" class="h-10 mb-3" />
+      <h2 class="font-semibold text-lg">MakeMyTrip</h2>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li>1 Day: ₹3,200</li>
+        <li>2 Days 3 Nights: ₹8,200</li>
+        <li>Weekend Special: ₹6,000</li>
+      </ul>
+    </div>
+
+    <!-- Add more platforms similarly -->
+  </main>
+
+  <footer class="bg-white text-center p-4 mt-8 shadow-inner">
+    <p>&copy; 2025 Hotel Price Compare. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<div class="success-message" id ="successMsg">Registration successfully</div>
+    <script>
+      document.getElementById("regForm").addEventListener("submit",function(e){
+        e.preventDefault();
+        document.getElementById("successMsg").style.display="block";
+      });

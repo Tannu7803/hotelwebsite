@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      background-color: #58abb9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    p{
+      color:black;
+      text-align: center;
+    }
+    article{
+      height: 50px;
+      background-color: black;
+    }
+
+    nav {
+      background-color: black;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a, nav .dropdown {
+      color: white;
+      padding: 16px 20px;
+      text-decoration: none;
+      position: relative;
+      
+    }
+    nav a:hover, .dropdown:hover > a {
+      background-color: #3d5c73;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #090904;
+      min-width: 180px;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      display: block;
+      color: white;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #6a5e80;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .main-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    /* Ensures nav takes full width and items align properly */
+    .nav-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    BLUE SKY HOTEL
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <div class="dropdown">
+        <a href="#">Service</a>
+        <div class="dropdown-content">
+          <a href="business.html">Business Booking</a>
+          <a href="conference.html">Conference Hall</a>
+          <a href="room.html">Family Hotel</a>
+          <a href="restaurant.html">Restaurant</a>
+        </div>
+      </div>
+
+      <a href="review.html">Review</a>
+      <a href="menu.html">Menu</a>
+      <a href="registration.html">Registration</a>
+
+      <div class="dropdown">
+        <a href="#">About Us</a>
+        <div class="dropdown-content">
+          <a href="location.html">Location</a>
+          <a href="sities.html">Sites</a>
+          <a href="#" onclick="showTiming()">Timing</a>
+          <a href="amenities.html">Amenities</a>
+          <a href="tel:930624240">Phone No</a>
+          <a href="Suggestion.html">Suggestions</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<script>
+    function showTiming() {
+      alert("Check-in: 12:00 PM\nCheck-out: 11:00 AM");
+    }
+    </script>
+
+<img src="http://www.new-delhi-hotels.com/blog/wp-content/uploads/2012/11/Taj-Palace-New-Delhi.jpg" alt="Hotel Image" class="main-img">
+  </script>
+  <article></article>
+  <footer>
+    <p>Owner:Tannu Goyal</p>
+    <p>Phone no.:9306249240</p>
+    <p>Website:www//http:BlueSky.com</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Registration</title>
+  <style>
+    body { font-family: Arial; background-color: #f2f2f2; padding: 20px; }
+    .form-container { background: white; padding: 20px; max-width: 500px; margin: auto; border-radius: 10px; box-shadow: 0 0 10px #aaa; }
+    input, select, textarea, button { width: 100%; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    button { background-color: #4CAF50; color: white; border: none; }
+    .success-message { text-align: center; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Hotel Service Registration</h2>
+    <form action="/register" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Service Type:</label>
+      <select name="service" required>
+        <option value="">-- Select --</option>
+        <option value="Business Booking">Business Booking</option>
+        <option value="Conference Hall">Conference Hall</option>
+        <option value="Family Hotel">Family Hotel</option>
+        <option value="Restaurant">Restaurant</option>
+      </select>
+
+      <label>Contact:</label>
+      <input type="text" name="contact" required>
+
+      <label>Aadhaar Card or Passport Number:</label>
+      <input type="text" name="id_number" min="1">
+
+      <label>How Many Rooms:</label>
+      <input type="number" name="rooms" min="1" >
+
+      <button type="submit">Submit</button>
+    </form>
+    </script>
+  </div>
+</body>
+</html>
